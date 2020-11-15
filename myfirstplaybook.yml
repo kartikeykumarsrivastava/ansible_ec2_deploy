@@ -2,5 +2,5 @@
   tasks:
   - name: Ansible copy file to remote server
     copy:
-      src: ~/ansibleproj
+      src: ~/ansibleproj/info.txt
       dest: ~/kartik
