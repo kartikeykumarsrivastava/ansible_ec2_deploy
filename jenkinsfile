@@ -3,7 +3,7 @@
     stages{
         stage("SCM Checkout"){
             steps{
-              sh("ansible --version")
+              echo '> Deploying the application ...'
             }
         }
     }
