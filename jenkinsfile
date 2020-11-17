@@ -6,7 +6,8 @@
               echo '> coppying  the file ...'
               ansiblePlaybook(
               playbook:'myfirstplaybook.yml',
-              inventory: 'inventory.ini'
+              inventory: 'inventory.ini',
+              installation: 'ansible'
               )
             }
         }
