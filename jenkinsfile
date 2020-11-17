@@ -5,8 +5,8 @@
             steps{
               echo '> coppying  the file ...'
               ansiblePlaybook(
-              playbook:'/var/lib/jenkins/workspace/ansible_demo/myfirstplaybook.yml',
-              inventory: '/var/lib/jenkins/workspace/ansible_demo/inventory.ini'
+              playbook:'myfirstplaybook.yml',
+              inventory: 'inventory.ini'
               )
             }
         }
