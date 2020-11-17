@@ -3,7 +3,11 @@
     stages{
         stage("SCM Checkout"){
             steps{
-              echo '> Deploying the application ...'
+              echo '> coppying  the file ...'
+              ansiblePlaybook(
+              inventory:'inventory.ini',
+              playbook:'myfirstplaybook.yml'
+              )
             }
         }
     }
