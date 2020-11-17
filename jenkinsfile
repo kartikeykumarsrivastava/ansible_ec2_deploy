@@ -4,7 +4,11 @@
         stage("SCM Checkout"){
             steps{
               echo '> coppying  the file ...'
-             ansiblePlaybook credentialsId: 'private-key', disableHostKeyChecking: true, installation: 'ansible', inventory: 'inventory.in', playbook: 'myfirstplaybook.yml'
+             ansiblePlaybook (
+                                disableHostKeyChecking: true, 
+                                installation: 'ansible',
+                                inventory: 'inventory.in', 
+                                playbook: 'myfirstplaybook.yml')
             }
         }
     }
