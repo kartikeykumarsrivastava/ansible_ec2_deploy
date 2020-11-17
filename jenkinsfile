@@ -6,7 +6,6 @@
               echo '> coppying  the file ...'
              ansiblePlaybook (
                                 disableHostKeyChecking: true, 
-                                installation: 'ansible',
                                 inventory: 'inventory.in', 
                                 playbook: 'myfirstplaybook.yml')
             }
