@@ -4,9 +4,8 @@
         stage("SCM Checkout"){
             steps{
               echo '> coppying  the file ...'
-             ansiblePlaybook (playbook: 'myfirstplaybook.yml,
-                              inventory: 'inventory.in'
-    )
+             ansiblePlaybook(playbook: 'myfirstplaybook.yml',
+                             inventory: 'inventory.in')
             }
         }
     }
