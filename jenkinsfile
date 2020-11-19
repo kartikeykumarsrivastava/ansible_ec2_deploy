@@ -4,7 +4,7 @@
         stage("SCM Checkout"){
             steps{
               echo '> coppying  the file ...'
-              sh 'ansible-playbook -i inventory.ini  myfirstplaybook.yml
+              sh 'ansible-playbook -i inventory.ini  myfirstplaybook.yml'
             }
         }
     }
