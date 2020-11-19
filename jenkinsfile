@@ -5,7 +5,6 @@
             steps{
               echo '> coppying  the file ...'
              ansiblePlaybook (
-                                disableHostKeyChecking: true, 
                                 inventory: 'inventory.in', 
                                 playbook: 'myfirstplaybook.yml')
             }
