@@ -4,7 +4,11 @@
         stage("SCM Checkout"){
             steps{
               echo '> coppying  the file ...'
-              sh 'ansible-playbook -i inventory.ini  myfirstplaybook.yml'
+              ansiblePlaybook(
+                              playbook: 'myfirstplaybook.yml',
+                              inventory: 'inventory.ini',
+                              disableHostKeyChecking: true,
+                              colorized: true)
             }
         }
     }
