@@ -1,8 +1,12 @@
 - hosts: local
   vars:
-    src_file: info.txt
+    src_file: 
+      - info0.txt
+      - info1.txt
+      - info2.txt
   tasks:
   - name: Ansible copy file to remote server
     copy:
       src: ~/ansibleproj/{{src_file}}
       dest: ~/kartik
+    loop: "{{src_file}}"
