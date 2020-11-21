@@ -7,6 +7,6 @@
   tasks:
   - name: Ansible copy file to remote server
     copy:
-      src: ~/ansibleproj/{{src_file}}
+      src: ~/ansibleproj/{{ item }}
       dest: ~/kartik
     loop: "{{src_file}}"
