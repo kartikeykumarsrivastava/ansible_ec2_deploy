@@ -7,5 +7,5 @@
   tasks:
   - name: Ansible copy file to remote server
     copy:
-      src: /home/ubuntu/ansible_proj/a.txt
+      src: ansible_proj/a.txt
       dest: /home/ec2-user/kartik/
