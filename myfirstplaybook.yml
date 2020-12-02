@@ -7,5 +7,5 @@
   tasks:
   - name: Ansible copy file to remote server
     copy:
-      src: ~/ansibleproj/info1.txt
-      dest: ~/kartik
+      src: webapp/target/webapp.war
+      dest: /home/ec2-user/kartik
