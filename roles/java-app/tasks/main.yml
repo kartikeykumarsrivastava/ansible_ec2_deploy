@@ -1,1 +1,6 @@
 
+ tasks:
+ - name: Ansible copy file to remote server1
+    copy:
+      src: "{{ name }}"
+      dest: /home/ubuntu/Kartik
