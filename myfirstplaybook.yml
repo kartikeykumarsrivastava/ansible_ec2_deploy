@@ -9,5 +9,5 @@
   tasks:
   - name: Ansible copy file to remote server2
     copy:
-      src: "{{ filename }}"
-      dest: /home/ubuntu/Kartik
+      src: "{{ filename1 }}"
+      dest: /home/ubuntu/
