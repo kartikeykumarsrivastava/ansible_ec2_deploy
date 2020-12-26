@@ -4,7 +4,7 @@
 - hosts: local1
   pre_tasks:
     - name: include env vars
-      include_vars: "vars.yml"
+      include_vars: "vars/filevar1.yml"
       tags: ["always"]
   roles:
     - java-app
