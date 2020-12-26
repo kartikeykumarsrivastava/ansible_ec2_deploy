@@ -1,15 +1,10 @@
+---
+# This playbook deploys a simple standalone JBoss server.
+
 - hosts: local1
-  tasks:
-  - include_vars: vars/filevar1.yml
-  - name: Ansible copy file to remote server1
-    copy:
-      src: "{{ name }}"
-      dest: /home/ubuntu/Kartik
-      
-- hosts: local2
-  tasks:
-  - include_vars: vars/filevar2.yml
-  - name: Ansible copy file to remote server2
-    copy:
-      src: "{{ name }}"
-      dest: /home/ubuntu/
+  pre_tasks:
+    - name: include env vars
+      include_vars: "vars.yml"
+      tags: ["always"]
+  roles:
+    - java-app
