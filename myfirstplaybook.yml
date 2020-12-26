@@ -1,13 +1,15 @@
 - hosts: local1
   tasks:
+  - include_vars: filevar1.yml
   - name: Ansible copy file to remote server1
     copy:
-      src: a.txt
+      src: {{ name }}
       dest: /home/ubuntu/Kartik
       
 - hosts: local2
   tasks:
+  - include_vars: filevar2.yml
   - name: Ansible copy file to remote server2
     copy:
-      src: b.txt
+      src: {{ name }}
       dest: /home/ubuntu/
