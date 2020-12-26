@@ -8,7 +8,7 @@
   - name: Ansible copy file to remote server
     copy:
       src: {{ filename }}
-      dest: /home/ubuntu/kartik/
+      dest: /home/ubuntu/Kartik
       
 - hosts: local2
   vars:
@@ -20,4 +20,4 @@
   - name: Ansible copy file to remote server
     copy:
       src: {{ filename }}
-      dest: /home/ubuntu/kartik/
+      dest: /home/ubuntu/Kartik
